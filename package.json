@@ -1,0 +1,47 @@
+{
+  "name": "@swaraj792725/ai-memory-store",
+  "version": "1.0.0",
+  "description": "Zero-dependency, persistent vector & keyword memory store for AI agents, vibe coding context, and LLM session state.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "memory-store",
+    "llm",
+    "vector-search",
+    "vibe-coding",
+    "project-memory",
+    "claude",
+    "gemini",
+    "rag",
+    "typescript"
+  ],
+  "author": "Swaraj <swaraj792725@github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swaraj792725/ai-memory-store.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
